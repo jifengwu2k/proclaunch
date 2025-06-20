@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctypes-unicode-proclaunch"
+version = "0.1.0a0"
+description = "A minimal, robust, and Unicode-aware process launching library using ctypes."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "escape-nt-command-line-argument",
+    "find-unicode-executable",
+    "posix-or-nt",
+    "read-unicode-environment-variables-dictionary",
+    "send-recv-json",
+    "typing; python_version < '3.5'"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/ctypes-unicode-proclaunch"
+"Bug Tracker" = "https://github.com/jifengwu2k/ctypes-unicode-proclaunch/issues"
