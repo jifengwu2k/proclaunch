@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proclaunch"
+version = "0.1.0a1"
+description = "A minimal interface over C for launching OS processes in Python 2 and 3 and across Windows and Unix, without invoking a shell or relying on Python's overly abstract `subprocess` module."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "split-command-line"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/proclaunch"
+"Bug Tracker" = "https://github.com/jifengwu2k/proclaunch/issues"
